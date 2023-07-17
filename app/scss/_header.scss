@@ -1,7 +1,9 @@
 @use "./variables" as *;
 
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999999;
   width: 100vw;
   height: 80px;
@@ -9,6 +11,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  backdrop-filter: blur(20px);
 
   #logoWhite {
     height: 40px;
