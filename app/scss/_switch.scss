@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+.switch {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid $light;
+  border-radius: 100px;
+  height: 40px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: gap 200ms ease-out, background-color 200ms ease-out;
+
+  &:hover {
+    transition: gap 200ms ease-out, background-color 200ms ease-out,
+      color 200ms ease-out;
+    gap: 25px;
+    background-color: $light;
+    color: $dark;
+  }
+}
